@@ -1,0 +1,13 @@
+
+
+body{
+ background-color: rgb(194, 140, 59); 
+}
+
+
+.home{
+  background-image: url(../img/multitasking.jpg), url(../img/Task.png);
+  background-repeat: no-repeat;
+  background-position: right bottom, left bottom;
+
+}

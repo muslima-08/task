@@ -1,0 +1,16 @@
+<div class="container container-fluid pb-5 mb-5">
+
+  <h1 class="text-center my-4">Search Results</h1>
+  <div class="row">
+    <% if(searchResult !=="" ?? searchResult.length > 0  ) {%>
+      <% searchResult.forEach(task=>{ %>
+        <a href="/dashboard/item/<%= task._id%>">
+          <h3> <%= task.title %></h3> 
+        </a>
+        <% })%>
+          <% } else { %>
+            <h4> Tasks not found</h4>
+            <% } %>
+  </div>
+</div>
+
